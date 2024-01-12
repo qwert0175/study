@@ -20,4 +20,18 @@
 
 - git branch (branch 이름) : branch 생성
 
+- git branch -d (branch 이름) : branch 삭제
+
 - git checkout (branch 이름) : branch 체크아웃(전환)
+
+### 되돌리기
+
+- 이전 행동을 지우는 방법
+
+  - 이전 행동이 다시 필요해지는 경우가 있을 수 있어 권장되지 않음
+
+- 과거의 행동을 다시 가져오는 방법(revert)
+
+  1. git log를 통해 해당 시점 로그 확인
+
+  2. git revert (로그) : 해당 로그 시점으로 되돌림
