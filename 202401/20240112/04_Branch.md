@@ -24,6 +24,8 @@
 
 - git checkout (branch 이름) : branch 체크아웃(전환)
 
+<br>
+
 ### 되돌리기
 
 - 이전 행동을 지우는 방법
