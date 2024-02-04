@@ -23,7 +23,8 @@ for i in range(N-1, -1, -1):  # N-1 -> 0번 인덱스
 
 print(temp)
 
-num = 456789
+# num = 233345
+num = 123456
 c = [0] * 12
 
 for i in range(6):
