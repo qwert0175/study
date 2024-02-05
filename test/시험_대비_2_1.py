@@ -7,7 +7,6 @@ for test_case in range(1, T+1):
     matrix = [list(map(int,input().split())) for _ in range(N)]
 
     max_power = 0
-    print(matrix)
 
     for i in range(N):
         for j in range(M):
