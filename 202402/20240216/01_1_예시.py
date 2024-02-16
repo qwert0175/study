@@ -18,7 +18,6 @@ def bfs(s, V, G):  # 시작정점 s, 노드개수 N
 T = int(input())
 for test_case in range(1,T+1):
     V, E = map(int,input().split())
-    arr = [[] for _ in range(V+1)]
 
     adjl = [[] for _ in range(V+1)]
     for i in range(E):
