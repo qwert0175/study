@@ -98,7 +98,7 @@ for test_case in range(1,T+1):
     print(f'#{test_case} {min_sum}')
 
 ### 스위치 켜고 끄기
-    
+
 # 스위치 개수
 N = int(input())
 # 스위치
