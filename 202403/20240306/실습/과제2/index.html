@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function pressButton(){
+            alert('로그인하라고는 안하셨습니다.')
+        }
+    </script>
     <style>
         input:focus{
             border-color: blue;
             border-radius: 3px;
             outline: none;
         }
+        label{
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
     <form id="user-data" action="#">
-        <strong onclick="document.getElementById('username').focus()">USERNAME : </strong>
+        <!-- label을 사용하도록 수정 -->
+        <!-- <strong onclick="document.getElementById('username').focus()">USERNAME : </strong> -->
+        <label for="username">USERNAME : </label>
         <input id="username" type="text" placeholder="아이디를 입력해주세요">
         <br>
-        <strong onclick="document.getElementById('password').focus()">PWD : </strong>
+        <!-- <strong onclick="document.getElementById('password').focus()">PWD : </strong> -->
+        <label for="password">PWD : </label>
         <input id="password" type="password">
-        <button>로그인</button>
+        <button onclick="pressButton()">로그인</button>
     </form>
 </body>
 </html>
