@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input:focus{
+            border-color: blue;
+            border-radius: 3px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="user-data" action="#">
+        <strong onclick="document.getElementById('username').focus()">USERNAME : </strong>
+        <input id="username" type="text" placeholder="아이디를 입력해주세요">
+        <br>
+        <strong onclick="document.getElementById('password').focus()">PWD : </strong>
+        <input id="password" type="password">
+        <button>로그인</button>
+    </form>
+</body>
+</html>
