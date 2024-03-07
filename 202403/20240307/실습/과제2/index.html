@@ -1,0 +1,32 @@
+<!-- 결합자가 div 내에 존재하면 자손결합자,
+그 중에서도 바로 하위에 존재하는 직계 자식이면 자식결합자이다.
+코드를 적용하면 div 내에 있는 자손 결합자들이 blue로 변경되고
+그 다음 div의 바로 아래에 있는 p들은 crimson으로 변경되어
+'자식'들의 색은 crimson, '손자'의 색은 blue가 된다.
+색으로 구분되므로 들여쓰기는 하지 않았습니다. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div의 자손 결합자에게 적용 */
+        div p {
+            color: blue;
+        }
+        /* div의 자식 결합자에게 적용 */
+        div > p {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>자식</p>
+        <span><p>손자</p></span>
+        <p>자식</p>
+    </div>
+</body>
+</html>
