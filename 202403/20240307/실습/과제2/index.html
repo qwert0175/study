@@ -2,8 +2,7 @@
 그 중에서도 바로 하위에 존재하는 직계 자식이면 자식결합자이다.
 코드를 적용하면 div 내에 있는 자손 결합자들이 blue로 변경되고
 그 다음 div의 바로 아래에 있는 p들은 crimson으로 변경되어
-'자식'들의 색은 crimson, '손자'의 색은 blue가 된다.
-색으로 구분되므로 들여쓰기는 하지 않았습니다. -->
+'자식'들의 색은 crimson, '손자'의 색은 blue가 된다.-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,19 +11,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* div의 자손 결합자에게 적용 */
+        /* 스타일 수정으로 공백 구분하기 */
         div p {
             color: blue;
+            /* 전체 자손결합자를 띄우기 */
+            padding-left: 30px;
         }
         /* div의 자식 결합자에게 적용 */
         div > p {
             color: crimson;
+            /* 자식 결합자일 경우 되돌리기 */
+            padding-left: 0px;
         }
     </style>
 </head>
 <body>
     <div>
         <p>자식</p>
+        <!-- &nbsp;로 띄우는 것보다 스타일 수정이 좋아보임 -->
         <span><p>손자</p></span>
         <p>자식</p>
     </div>

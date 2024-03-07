@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-title{
+            background-color: #333;
+            width: 100%;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #f7f7f7;
+        }
+
+        .book-container {
+            box-sizing: border-box;
+            background-color: #fff;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .book-container > img {
+            width: 200px;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .book-author {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .book-description {
+            height: 100px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .section-title {
+            box-sizing: border-box;
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .top-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .top-button a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section-column {
+            width: 300px;
+        }
+
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="height: 3000px;">
+    <div class="main-title">
+        <h1>도서 관리 서비스</h1>
+    </div>
+    <div class="nav-bar">
+        <a href="#">홈</a> |
+        <a href="#">베스트 셀러</a> |
+        <a href="#">신간 도서</a> |
+        <a href="#">사서 추천</a>
+    </div>
+    <div class="section-container">
+        <div class="section-column">
+            <div class="section-title">베스트 셀러 목록</div>
+            <div class="book-list">
+                <div class="book-container">
+                    <img src="book1.jpg" alt="book1">
+                    <h2 class="book-title">도서 제목 1</h2>
+                    <p class="book-author">저자 1</p>
+                    <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
+                </div>
+
+                <div class="book-container">
+                    <img src="book1.jpg" alt="book1">
+                    <h2 class="book-title">도서 제목 2</h2>
+                    <p class="book-author">저자 2</p>
+                    <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-column">
+            <div class="section-title">신간 도서 목록</div>
+            <div class="book-list">
+                <div class="book-container">
+                    <img src="book1.jpg" alt="book1">
+                    <h2 class="book-title">도서 제목 3</h2>
+                    <p class="book-author">저자 3</p>
+                    <p class="book-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="book-container">
+                    <img src="book1.jpg" alt="book1">
+                    <h2 class="book-title">도서 제목 4</h2>
+                    <p class="book-author">저자 4</p>
+                    <p class="book-description">Voluptas ut eum consequatar labore voluptates quaerat minima esse asperiores exercitationem?</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-column">
+            <div class="section-title">사서 추천 목록</div>
+            <div class="book-list">
+                <div class="book-container">
+                    <img src="book1.jpg" alt="book1">
+                    <h2 class="book-title">도서 제목 5</h2>
+                    <p class="book-author">저자 5</p>
+                    <p class="book-description">일부 워드프로세서나 디자인 소프트웨어에는 로렘 입숨을 자동으로 생성해 주는 기능이 있다. 마이크로소프트 오피스에서는 =lorem()을 입력하고 엔터를 누르면 된다.</p>
+                </div>
+
+                <div class="book-container">
+                    <img src="book1.jpg" alt="book1">
+                    <h2 class="book-title">도서 제목 6</h2>
+                    <p class="book-author">저자 6</p>
+                    <p class="book-description">단락과 문장 갯수를 지정할 수 있는데 괄호 안에 쉼표로 구분해서 두 숫자를 입력하면 된다. 예를 들어 =lorem(1,2)를 입력하면 두 개의 문장이 들어간 한 단락의 로렘 입숨이 생성된다.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="top-button">
+        <a href="#">TOP</a>
+    </div>
+</body>
+</html>
