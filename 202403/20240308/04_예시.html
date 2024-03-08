@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ani {
+            50%{
+                background-color: white;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+        .container {
+            display: flex;
+        }
+        .box:nth-child(2n+1){
+            animation: ani 2s 1s infinite;
+        }
+        .box {
+            background-color: blue;
+            width: 20%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">a</div>
+        <div class="box">b</div>
+        <div class="box">c</div>
+        <div class="box">d</div>
+        <div class="box">e</div>
+    </div>
+</body>
+</html>
