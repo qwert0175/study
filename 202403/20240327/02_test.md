@@ -119,3 +119,5 @@ class Article(forms.ModelForm):
 ### MTV 디자인 패턴이 무엇인지 서술
 
 ### auto_now_add와 auto_now
+
+### register
